@@ -93,6 +93,9 @@ oc deploy cakephp-mysql-example --latest
                   </ul>
 
                 <h2>Request information</h2>
+			    <p>Server IP:
+				<?php
+				?>	
                 <p>Page view count:
                <?php
                     use Cake\Datasource\ConnectionManager;
