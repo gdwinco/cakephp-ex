@@ -98,20 +98,8 @@ oc deploy cakephp-mysql-example --latest
 				  // SERVER_ADDR, REMOTE_ADDR give error for persistent version, 
 				  //echo $_SERVER['SERVER_ADDR'];
 				  //echo $_SERVER['REMOTE_ADDR'];
-			      // create a new cURL resource
-				  $ch = curl_init ();
-
-				  // set URL and other appropriate options
-				  curl_setopt ($ch, CURLOPT_URL, "http://ipecho.net/plain");
-				  curl_setopt ($ch, CURLOPT_HEADER, 0);
-				  curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true);
-
-				  // grab URL and pass it to the browser
-
-				  $ip = curl_exec ($ch);
-				  echo "The public ip for this server is: $ip";
-				  // close cURL resource, and free up system resources
-				  curl_close ($ch);
+					$my_current_ip=exec("ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'");
+                    echo $my_current_ip;
 				?>	
                 <p>Page view count:
                <?php
