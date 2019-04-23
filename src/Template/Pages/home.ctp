@@ -95,7 +95,7 @@ oc deploy cakephp-mysql-example --latest
                 <h2>Request information</h2>
 			    <p>Server IP:
 				<?php
-				  echo $_SERVER['SERVER_ADDR'];
+				  echo $_SERVER['REMOTE_ADDR'];
 				?>	
                 <p>Page view count:
                <?php
