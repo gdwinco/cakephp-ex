@@ -98,8 +98,7 @@ oc deploy cakephp-mysql-example --latest
 				  // SERVER_ADDR, REMOTE_ADDR give error for persistent version, 
 				  //echo $_SERVER['SERVER_ADDR'];
 				  //echo $_SERVER['REMOTE_ADDR'];
-					$my_current_ip=exec("ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'");
-                    echo $my_current_ip;
+					print_r($_ENV); 
 				?>	
                 <p>Page view count:
                <?php
