@@ -98,7 +98,7 @@ oc deploy cakephp-mysql-example --latest
 				  // SERVER_ADDR, REMOTE_ADDR give error for persistent version, 
 				  //echo $_SERVER['SERVER_ADDR'];
 				  //echo $_SERVER['REMOTE_ADDR'];
-					echo $_SERVER;
+					//echo $_SERVER;
 					echo $_ENV; 
 				?>	
                 <p>Page view count:
