@@ -100,8 +100,7 @@ oc deploy cakephp-mysql-example --latest
 				  //echo $_SERVER['REMOTE_ADDR'];
 					//echo $_SERVER;
 					//echo $_ENV; 
-					
-					echo $_SERVER['SERVER_NAME'];
+					//echo $_SERVER['SERVER_NAME'];
 				?>	
                 <p>Page view count:
                <?php
